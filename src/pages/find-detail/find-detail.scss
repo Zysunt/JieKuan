@@ -1,0 +1,18 @@
+page-find-detail {
+    .bar-button-default-ios{
+        color: unset;
+    }
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    p:nth-of-type(1){
+        margin-bottom: 15px;
+
+    }
+    p:nth-of-type(2){
+        margin-top: 5px;
+    }
+}

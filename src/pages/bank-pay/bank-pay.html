@@ -1,0 +1,46 @@
+
+<ion-header>
+    <div class="windowBox" (click)="hideBox()" [hidden]="!btn"></div>
+    <ion-navbar >
+        <!-- <ion-icon (click)="pop()" ios="ios-arrow-back" md="md-arrow-back"></ion-icon> -->
+       
+      <ion-title text-center>银行卡支付</ion-title>
+      <!-- <div class="clear"></div> -->
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="windowBox" (click)="hideBox()" [hidden]="!btn"></div>
+  <div class="showBox"  [hidden]="!btn">
+    <span class="codeFon">手机验证码</span>
+    <div class="itemBox">
+      <input type="number" pattern="[0-9]*"  class="input-btn" placeholder="18745523698"/>
+    </div>
+    <div class="itemBox">
+        <input type="number" class="input-btn mes_code" pattern="[0-9]*"  placeholder="短信验证码"/>
+        <button class="code-btn" item-right ion-button (click)="settime()" [disabled]="!verifyCode.disable" value="获取验证码" style="box-shadow:none;">{{verifyCode.verifyCodeTips}}</button>
+      </div>
+      <div class="btn-box">
+          <button class="cancel-btn" (click)="hideBox()">取消</button>
+          <button class="confirm-btn" (click)="hideBox()">确认</button>
+      </div>
+  </div>
+
+
+  <div class="itemBox">
+    <span class="gray-colo">暂不支持信用卡还款服务</span>
+  </div>
+  <div class="itemBox">
+    <span class="left-fon">还款金额</span>
+    <span class="right-fon blue-colo" style="margin-right:25px;">{{monney}}元</span>
+  </div>
+  <div class="itemBox " (click)="choosepay()">
+      <span class="left-fon">支付方式</span>
+      <span class="gray-coloz choose_pay">中国银行（尾号{{banknum}}）</span>
+      <img class="right-img" src="assets/imgs/right_gray@2x.png" alt="">
+    </div>
+ 
+    <button ion-button (click)="showBox()">确定</button>
+    <button class="cancelBtn">取消</button>
+</ion-content>

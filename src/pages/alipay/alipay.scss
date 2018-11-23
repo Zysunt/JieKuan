@@ -1,0 +1,136 @@
+page-alipay {
+    .toolbar-title-ios{
+        font-weight: 500;
+    }
+    .toolbar-title-md {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: .8rem;
+        color: #424242;
+        text-align: center;
+        margin-left: -2rem;
+    }
+    .toolbar-background-md {
+        border-color: none;
+        background: none;
+    }
+    .toolbar-content{
+        overflow: hidden;
+    }
+    .clear-fu{
+        overflow: hidden;
+        position: relative;
+        height: 5rem;
+    }
+    .scroll-content::-webkit-scrollbar{
+        display: none;
+    }
+    .button-ios {
+        border-radius: 1.2rem;
+        height: 3em;
+        font-size: 18px;
+        color: #fff;
+        background-color: #564ef1;
+        // margin: 0.5rem 6% 2rem 6%;
+        width: 75%;
+        -webkit-box-shadow:0 0 10px #BBBFDB ;
+        -moz-box-shadow:0 0 10px #BBBFDB;
+        box-shadow:0 0 10px #BBBFDB;
+    }
+    .button-md {
+        overflow: hidden;
+        width: 75%;
+        height: 4.6rem;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: #564ef1;
+        // margin: 0.5rem 6% 2rem 6%;
+        border-radius: 1rem;
+        -webkit-box-shadow:0 0 10px #BBBFDB ;
+        -moz-box-shadow:0 0 10px #BBBFDB;
+        box-shadow:0 0 10px #BBBFDB;
+    }
+    .cancelBtn{
+        overflow: hidden;
+        width: 85.5%;
+        height: 4.6rem;
+        font-size: 1.8rem;
+        border: 1px solid #564ef1;
+        color:#564ef1;
+        background-color: #fff;
+        margin: 0 6%;
+        border-radius: 1rem;
+        -webkit-box-shadow:0 0 10px #BBBFDB ;
+        -moz-box-shadow:0 0 10px #BBBFDB;
+        box-shadow:0 0 10px #BBBFDB;
+
+    }
+    .itemBox{
+        height: 4.2rem;
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+        border-bottom: 1px solid gainsboro;
+    }
+    .itemBox span{
+        font-size: 16px;
+        line-height: 4.2rem;
+    }
+    .gray-colo{
+        color: #AEACB4;
+    } 
+    .gray-coloz{
+        color: #AEACB4;
+        float: right;
+        margin-right: 1.5rem;
+    }  
+    .blue-colo{
+        color: #564ef1;
+    }
+    .right-img{
+        height: 1.4rem;
+        position: absolute;
+        right: 0.1rem;
+        top: 1.4rem;
+    }
+    .left-fon{
+        float: left;
+    }
+    .right-fon{
+        float: right;
+    } 
+    .cont-box{
+        width: 90%;
+        margin: 3rem 0;
+        position: relative;
+        left: 50%;
+        margin-left: -45%;
+    }
+    .cont-box p{
+        font-size: 13px;
+        line-height: 2rem;
+        display: inline-block;
+    }
+    .yellowColo{
+        color: #FC7615;
+    }
+    .item-ios{
+        margin: 0 5%;
+        width: 90%;
+        padding: 0;
+    }
+    .item-inner{
+        border-bottom: 1px solid gainsboro;
+    }
+
+.cancle{
+    background: white;
+    color: #564ef1;
+    border: 1px solid #564ef1;
+    margin-top: 20px;
+}
+    
+    .bar-button-default-ios{
+        color: initial;
+    }
+}

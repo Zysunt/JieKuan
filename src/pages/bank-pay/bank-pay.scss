@@ -1,0 +1,214 @@
+page-bank-pay {
+
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+    .toolbar-title-ios{
+        font-weight: 500;
+    }
+    .toolbar-title-md {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: .8rem;
+        color: #424242;
+        text-align: center;
+        margin-left: -2rem;
+    }
+   
+    .toolbar-content{
+        overflow: hidden;
+    }
+    .clear-fu{
+        overflow: hidden;
+        position: relative;
+        height: 5rem;
+    }
+    .scroll-content::-webkit-scrollbar{
+        display: none;
+    }
+    .button-ios {
+        border-radius: 1.2rem;
+        height: 4.6rem;
+        font-size: 18px;
+        color: #fff;
+        background-color: #564ef1;
+        margin: 6rem 6% 2rem 6%;
+        width: 86%;
+        -webkit-box-shadow:0 0 10px #BBBFDB ;
+        -moz-box-shadow:0 0 10px #BBBFDB;
+        box-shadow:0 0 10px #BBBFDB;
+    }
+    .button-md {
+        overflow: hidden;
+        width: 86%;
+        height: 4.6rem;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: #564ef1;
+        margin: 6rem 6% 2rem 6%;
+        border-radius: 1rem;
+        -webkit-box-shadow:0 0 10px #BBBFDB ;
+        -moz-box-shadow:0 0 10px #BBBFDB;
+        box-shadow:0 0 10px #BBBFDB;
+    }
+    .cancelBtn{
+        overflow: hidden;
+        width: 85.5%;
+        height: 4.6rem;
+        font-size: 1.8rem;
+        border: 1px solid #564ef1;
+        color:#564ef1;
+        background-color: #fff;
+        margin: 0 6%;
+        border-radius: 1rem;
+        -webkit-box-shadow:0 0 10px #BBBFDB ;
+        -moz-box-shadow:0 0 10px #BBBFDB;
+        box-shadow:0 0 10px #BBBFDB;
+
+    }
+    .itemBox{
+        height: 4.2rem;
+        width: 100%;
+        // margin-left: 5%;
+        position: relative;
+        border-bottom: 1px solid gainsboro;
+    }
+    .itemBox span{
+        font-size: 16px;
+        line-height: 4.2rem;
+    }
+    .gray-colo{
+        color: #AEACB4;
+    } 
+    .gray-coloz{
+        color: #AEACB4;
+        float: right;
+        margin-right: 1.5rem;
+    }  
+    .blue-colo{
+        color: #564ef1;
+    }
+    .right-img{
+        height: 1.4rem;
+        position: absolute;
+        right: 0.1rem;
+        top: 1.4rem;
+    }
+    .left-fon{
+        float: left;
+    }
+    .right-fon{
+        float: right;
+    } 
+   
+    .item-ios{
+        margin: 0 5%;
+        width: 90%;
+        padding: 0;
+    }
+    .item-inner{
+        border-bottom: 1px solid gainsboro;
+    }
+    .windowBox{
+        height:100%;
+        width: 100%;
+        background-color: gray;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        z-index: 50;
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+    }
+    .showBox{
+        background-color: #fff;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        left: 7.5%;
+        border-radius: .5rem;
+        z-index: 100;
+    }
+    .showBox .itemBox{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .showBox .itemBox input{
+        width: 60%;
+        float: left;
+    }
+    .showBox .itemBox .mes_code{
+        width: 45%;
+    }
+    .codeFon{
+        font-size: 18px;
+        display: inline-block;
+        margin: 2rem 0;
+    }
+    .input-btn{ 
+        border: none;
+        // border-bottom: 1px solid #C8C7CC;
+        height: 2rem;
+        text-align: left;
+        margin-top: 3px;
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+        padding-left: .5rem;
+        position: relative;
+        top: 50%;
+        margin-top: -1rem;
+    }
+    .getCode{
+        position: absolute;
+        right: 1rem;
+        top: .3rem;
+    }
+    .btn-box{
+        height: 9rem;
+        line-height: 5rem;
+        width: 80%;
+        overflow: hidden;
+        margin-left: 10%;
+    }
+    .btn-box button{
+        margin-top: 2rem;
+        height: 4rem;
+        width: 35%;
+        border-radius: .5rem;
+        font-size: 18px;
+    }
+    .cancel-btn{
+        float: left;
+        color: #564ef1;
+        background-color: #fff;
+    }
+    .confirm-btn{
+        float: right;
+        color: #fff;
+        background-color: #564ef1;
+    }
+    .code-btn{
+        width: initial !important;
+        margin: 0 !important;
+        background: none !important;
+        color: #564ef1;
+    }
+    .choose_pay{
+        color: #564ef1;
+    }
+}

@@ -1,0 +1,109 @@
+<!-- <ion-header>
+  <ion-navbar class="home_header">
+    
+      
+  </ion-navbar>
+</ion-header> -->
+
+
+
+<ion-content text-center>
+<!-- 头部 -->
+<div class="home_header">
+    <img src="assets/imgs/home/news@2x.png" alt="" (click)="msg()" width="19px" height="19px;">
+    <ion-slides pager loop="ture" autoplay="1000">
+
+        <ion-slide>
+            <p class="intro">新手必读</p>
+            <p class="tip">借款前你必须知道的3件事</p>
+        </ion-slide>
+      
+        <ion-slide>
+          <p class="intro">新手必读</p>
+            <p class="tip">借款前你必须知道的5件事</p>
+        </ion-slide>
+      
+        <ion-slide>
+          <p class="intro">新手必读</p>
+            <p class="tip">借款前你必须知道的7件事</p>
+        </ion-slide>
+      
+      </ion-slides>
+</div>
+
+    
+
+
+
+<ion-card  class="pay_content" *ngIf="!isChecking">
+    <ion-card-content class="first_show" [hidden]="step!=1">
+      <p class="max_borrow">最高可借 (元)</p>
+      <p class="max_money">100000.00</p>
+      <div class="features">
+        <div class="feature_list">
+          <img src="assets/imgs/home/safe@2x.png" alt="" width="60px" height="60px">
+          <p>安全可靠</p>
+        </div>
+        <div class="feature_list">
+            <img src="assets/imgs/home/data@2x.png" alt="" width="60px" height="60px">
+            <p>资料简单</p>
+          </div>
+          <div class="feature_list">
+              <img src="assets/imgs/home/check@2x.png" alt="" width="60px" height="60px">
+              <p>审核迅速</p>
+            </div>
+      </div>
+    </ion-card-content>
+
+    <ion-card-content class="borrow_capacity" [hidden]="step!=2">
+      <p class="ava_borrow">可借额度 (元)</p>
+      <p class="ava_money">{{ava_money}}</p>
+    </ion-card-content>
+
+    <ion-card-content class="payback" [hidden]="step!=3">
+      <p>到期应还</p>
+      <h2>{{should_pay}}元</h2>
+      <p>距离还款还有</p>
+      <h2>{{enddate}}天</h2>
+    </ion-card-content> 
+  </ion-card>
+
+<div *ngIf="!isChecking">
+<div style="clear:both; height:160px"></div>
+<button ion-button block class="torepay" [hidden]="step!=1" (click)="shenqing()">立即申请</button>
+<button ion-button block class="torepay" [hidden]="step!=2" (click)="jiekuan()">立即借款</button>
+<button ion-button block class="torepay" [hidden]="step!=3" (click)="toauto()">立即还款</button>
+</div>
+
+
+<div id="check" *ngIf="isChecking" text-center >
+<div class="checking" [hidden]="checkingstep!=1" (click)="nextchecking()">
+  <img src="assets/imgs/home/check_1@2x.png" alt="" width="178px" height="166px;">
+  <p style="color:#6963f2;margin-top: 15px;">
+    审核中
+  </p>
+  <p style="color:#bbbbbb;margin-top: 15px;padding: 0 35px;">
+    请耐心等待，审核的结果最终会以短信的形式通知到您
+  </p>
+</div>
+
+<div class="checking" [hidden]="checkingstep!=2" (click)="checkingend()">
+  <img src="assets/imgs/home/success@2x.png" alt="" width="178px" height="166px;">
+  <p style="color:#6963f2;margin-top: 15px;">
+    恭喜您审核成功
+  </p>
+  <p style="color:#bbbbbb;margin-top: 15px;padding:0 45px;">
+    您的申请已成功，请点击联系您的专属客服
+    了解放款事宜，正常2小时到账
+  </p>
+</div>
+
+<div class="checking" [hidden]="checkingstep!=3">
+  <div class="ad_wrap"></div>
+  <img src="assets/imgs/home/pic_5@2x.png" alt="" width="252px" height="265px;" class="adv" (click)="torecommend()">
+  <img src="assets/imgs/home/wrong@2x.png" alt="" width="31px" height="31px;" class="adv_close" (click)="restart()">
+</div>
+</div>
+
+</ion-content>
+

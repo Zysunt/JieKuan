@@ -1,0 +1,93 @@
+<!--
+  Generated template for the IdentificationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+     
+    <ion-title text-center>
+      我的认证
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ul>
+      <li class="list" (click)="tocertification()" >
+          <img src="assets/imgs/identification/id@2x.png" alt="" width="25px" height="25px" class="logo">
+          <span class="classify">身份认证</span>
+          <span [hidden]="identificated"  class="unidentificated">已认证
+              <img src="assets/imgs/components/right_gray@2x.png" alt="" class="arrow_right">
+          </span>
+          <span [hidden]="!identificated" class="identificated">已认证
+            <img src="assets/imgs/components/right@2x.png" alt="" class="arrow_right">
+        </span>
+      </li>
+      <li class="list"(click)="tobasic()" >
+        <img src="assets/imgs/identification/basenews@2x.png" alt="" width="25px" height="25px" class="logo">
+          <span class="classify">基本信息认证</span>
+          <span  [hidden]="basiced" class="unidentificated">已认证
+            <img src="assets/imgs/components/right_gray@2x.png" alt="" class="arrow_right">
+          </span>
+          <span [hidden]="!basiced" class="identificated">已认证
+            <img src="assets/imgs/components/right@2x.png" alt="" class="arrow_right">
+      </span>
+      </li>
+      <li class="list" (click)="tosocial()"  >
+        <img src="assets/imgs/identification/contact@2x.png" alt="" width="25px" height="25px" class="logo">
+          <span class="classify">社交认证</span>
+          <span [hidden]="socialed" class="unidentificated">已认证
+            <img src="assets/imgs/components/right_gray@2x.png" alt="" class="arrow_right">
+          </span>
+          <span [hidden]="!socialed" class="identificated">已认证
+            <img src="assets/imgs/components/right@2x.png" alt="" class="arrow_right">
+      </span>
+      </li>
+      <li class="list"  (click)="tooperator()">
+        <img src="assets/imgs/identification/phon@2x.png" alt="" width="25px" height="25px" class="logo">
+          <span class="classify">手机认证</span>
+          <span [hidden]="operatored" class="unidentificated">已认证
+            <img src="assets/imgs/components/right_gray@2x.png" alt="" class="arrow_right">
+          </span>
+          <span [hidden]="!operatored" class="identificated">已认证
+            <img src="assets/imgs/components/right@2x.png" alt="" class="arrow_right">
+      </span>
+      </li>
+      <li class="list">
+        <img src="assets/imgs/zmf.png" alt="" width="25px" height="25px" class="logo">
+          <span class="classify">芝麻分认证</span>
+          <span [hidden]="eCommerced"  class="unidentificated">已认证
+            <img src="assets/imgs/components/right_gray@2x.png" alt="" class="arrow_right">
+          </span>
+          <span [hidden]="!eCommerced" class="identificated">已认证
+            <img src="assets/imgs/components/right@2x.png" alt="" class="arrow_right">
+      </span>
+      </li>
+  
+    </ul>
+
+    <p class="tips">| 提额认证  <span>完成所有基本认证后才可激活额度</span></p>
+    <ul>
+        <li class="list">
+            <img src="assets/imgs/identification/e-commerce@2x.png" alt="" width="25px" height="25px" class="logo">
+            <span class="classify">电商认证</span>
+            <span [hidden]="banked"  class="unidentificated">已认证
+              <img src="assets/imgs/components/right_gray@2x.png" alt="" class="arrow_right">
+            </span>
+            <span [hidden]="!banked" class="identificated">已认证
+              <img src="assets/imgs/components/right@2x.png" alt="" class="arrow_right">
+      </span>
+        </li>
+    </ul>
+    <button ion-button (click)="submitidentification()">提交审核</button>
+
+    <p style="color: #b1b1b1;font-size: 13px;padding:10px 0;text-align: center;">
+        <img src="assets/imgs/identification/pointout@2x.png" alt="" width="19px" height="22px;">
+        不向学生提供任何服务
+    </p>
+</ion-content>

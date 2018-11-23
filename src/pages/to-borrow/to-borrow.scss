@@ -1,0 +1,111 @@
+page-to-borrow {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+
+.po{
+    background: linear-gradient(left,#9987FA,#6E76FF); 
+    height: 50px !important;
+    width:60% !important;
+    border-radius: 5px !important;
+}
+    
+    .c_b_content{
+        width: 45%;
+    }
+    .c_b_content p{
+        color: #b6b6b6;
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding-left: 6px;
+    }
+    .choose_box{
+        padding-top: 10px;
+        height: 100px;
+        border-bottom: 1px solid #e5e5e5;
+        background: white;
+    }
+    .accounts{
+        margin-top: 18px;
+    }
+    .accounts p{
+        margin-top: 5px;
+    }
+    h3{
+        color: black;
+        text-align: right;
+        font-size: 18px;
+    }
+    h3 span{
+        color: #6a64f3;
+    }
+
+
+    .toggle-inner {
+        width: 1.4rem !important;
+        height: 1.4rem !important;
+        top: 1px !important;
+    }
+    .toggle{
+        width: 33px;
+        height: 1.7rem;
+        padding: 0;
+        margin-top: 2px;
+    }
+    .confirm{
+        display: flex;
+        font-size: 16px;
+    }
+    .confirm span{
+        color:#6a64f3;
+    }
+    .torepay{
+        position: absolute;
+        top: 60%;
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+        border-radius: 2.8em;
+        box-shadow: #434343;
+        background: #564ef1;
+        height: 4.6rem;
+    }
+
+
+
+    .select-md,.select-ios{
+        padding: 0;
+    }
+    ion-select,.select-text{
+        overflow: unset;
+    }
+    .select-icon{
+        // margin-left: 30px;
+        left: 86%;
+        position: absolute !important;
+    }
+    .item-block{
+        min-height: 37px;
+        border: 1px solid #d9d9d9;
+        border-radius: 37px;
+        // padding-left: 10px;
+    }
+    .select-icon-inner{
+        left: 0 !important;
+    }
+
+    .xifei,.youhuiquan{
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
+}

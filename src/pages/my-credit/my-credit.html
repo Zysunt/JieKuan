@@ -1,0 +1,35 @@
+<!--
+  Generated template for the MyCreditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>我的银行卡</ion-title>
+    <span class="change" (click)="changecredit()" *ngIf="hascard">修改</span>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="bank_card" *ngIf="hascard">
+      <div class="card_bank">
+          <img src="assets/imgs/mine/card_3@2x.png" alt="" width="25px" height="20px">
+          <span>{{bank}}</span>
+      </div>
+      <p class="card_type">
+        储蓄卡
+      </p>
+      <div class="card_code">
+        <img src="assets/imgs/mine/asterisk@2x.png" alt="" width="136px" height="13px">
+        <span>{{cardcode}}</span>
+      </div>
+  </div>
+
+  <div class="addcard" *ngIf="!hascard" (click)="addcard()">
+    +
+  </div>
+</ion-content>

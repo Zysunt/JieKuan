@@ -1,0 +1,84 @@
+
+<ion-header>
+
+  <ion-navbar>
+     
+     
+    <ion-title text-center>自助还款</ion-title>
+  
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="outer-content">
+  <!-- <div class="top-switch">
+    <ul>
+      <li class="left-switch"  (click)="showone()">我要还款</li>
+      <li class="right-switch"  (click)="showtwo()">我要续期</li>
+    </ul>
+  </div> -->
+  <ion-toolbar no-border-top *ngIf="demo != 'Title'">
+        
+        <ion-segment color="danger" [(ngModel)]="favorites">
+          <ion-segment-button  (click)="showone()" value="huan">
+            我要还款
+          </ion-segment-button>
+          <ion-segment-button (click)="showtwo()" value="xu">
+            我要续期
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+  <div class="tab-one" *ngIf="!isShow" >
+      <div class="font-cent"><span class="gray-c">---</span>请选择续期天数<span class="gray-c">---</span></div>
+      <div class="cont-box">
+          <div class="item-box">
+              <span class="left-fon">续期天数：</span>
+              <span class="right-fon">{{ time | pip : 'zh' }}</span>
+              <!-- <ion-input class="right-fon" ></ion-input> -->
+              <img class="right-img" src="assets/imgs/right_gray@2x.png" alt="">
+          </div>
+          <ion-item>
+              <ion-label>续期还款日：</ion-label>
+              <ion-datetime displayFormat="YYYY-MM-D"   min="2018-11" max="2050-10" [(ngModel)]="time" cancelText="取消" doneText="确认" ></ion-datetime>
+          </ion-item>
+          <div class="item-box-last">
+            <span class="left-fon">到期应还：</span>
+            <span class="right-fon blue-colo">{{should_pay}}元</span>
+        </div>
+      </div>
+      <div class="font-cent"><span class="gray-c">---</span>续期费用<span class="gray-c">---</span></div>
+      <div class="cont-box">
+            <div class="item-box">
+                <span class="left-fon">本期息费：</span>
+                <span class="right-fon">{{interest_money}}元</span>
+            </div>
+            <div class="item-box">
+                <span class="left-fon">续期服务费：</span>
+                <span class="right-fon">{{serve_money}}元</span>
+                <img class="cent-img" src="assets/imgs/@2x.png" alt="">
+            </div>
+            <div class="item-box">
+                <span class="left-fon">总共应扣：</span>
+                <span class="right-fon blue-colo">{{total}}元</span>
+            </div>
+      </div>
+      <button ion-button (click)="toBank()">支付续期费用</button>
+  </div>
+  <div class="tab-two"  *ngIf="isShow">
+        <ul>
+            <li>
+                <div>
+                    <p>{{repay}}</p>
+                    <p>还款金额</p>
+                   </div>
+                   <div (click)="toborrowtime()">
+                    <p>{{dateend}}</p>
+                    <p>到期还款日</p>
+                   </div>
+                   <div>
+                    <p style="line-height:60px" (click)="toBank()">还款中</p>
+                   </div>
+            </li>
+        </ul>
+  </div>
+  </ion-content>

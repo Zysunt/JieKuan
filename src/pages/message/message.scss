@@ -1,0 +1,35 @@
+page-message {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+
+
+    h2{
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 12px 11px 0px;
+    }
+    h2 span{
+        font-size: 14px !important;
+        float: right;
+        color: #bbbbbb;
+    }
+    ul li{
+        // list-style: initial;
+        background: white;
+        margin-top: 15px;
+    }
+    li p{
+        padding: 0 11px 15px 22px;
+        color: #a7a7a7;
+    }
+}

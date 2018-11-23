@@ -1,0 +1,46 @@
+page-setting {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+
+    .line{
+        height: 46px;
+        width: 100%;
+        background: white;
+        margin-top: 15px;
+    }
+    .line span{
+        font-size: 18px;
+        line-height: 46px;
+        margin-left: 25px;
+    }
+    .line img{
+        float: right;
+    position: relative;
+    top: 50%;
+    margin-top: -5px;
+    margin-right: 25px;
+    }
+    .quit{
+        width: 75%;
+        height: 50px;
+        background: #564ef1;
+        border-radius: 5px;
+        -webkit-box-shadow: 2px 2px 2px #564ef1;
+        box-shadow: 2px 2px 2px #564ef1;
+        position: relative;
+        left: 50%;
+        margin-left: -37%;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+}

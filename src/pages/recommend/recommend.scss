@@ -1,0 +1,113 @@
+page-recommend {
+    ion-icon {
+        display: inline-block;
+        font-size: 2em;
+        position: relative;
+        left: -14rem;
+        top: .5rem;
+    }
+    ion-navbar.toolbar {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    .toolbar-title-md{
+        padding: 12px;
+        margin-right: 4rem;
+    }
+    [padding] h1:first-child, [padding] h2:first-child, [padding] h3:first-child, [padding] h4:first-child, [padding] h5:first-child, [padding] h6:first-child {
+        margin-top: 1.7rem;
+    }
+    .button-clear-ios {
+        border-color: transparent;
+        color: #fff;
+        background-color: #564ef1;
+    }
+    .button-clear-md{
+        color: #fff;
+        background-color: #564ef1;
+    }
+    .item-ios.item-block .item-inner{
+        border-bottom: none;
+    }
+    .scroll-content {
+        background-color: #F8F8F8;
+    }
+
+    .item-md{
+        max-height: 7.5rem;
+    }
+    .item-md .item-button {
+        padding: 0 0.6em;
+        height: 2.6rem;
+        font-size: 16px;
+        border-radius: 1.3rem;
+        width: 8rem;
+    }
+    .item-md h2{
+        margin: 0;
+    }
+    .item-md p {
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{
+        border-style: none;
+        background-color: #fff;
+    }
+    .scroll-content {
+        background-color: #F8F8F8;
+    }
+    .item-md ion-thumbnail {
+        min-width: 70px;
+        min-height: 70px;
+    }
+    .item-ios .item-button {
+        padding: 0 0.5em;
+        height: 2.6rem;
+        font-size: 1.3rem;
+        border-radius: 1.5rem;
+        width: 8rem;
+    }
+    .toolbar-title-ios{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .item-block {
+        margin: 1rem 0;
+    }
+    .item-md.item-block .item-inner{
+        border-bottom: none;
+    }
+    .toolbar-title-md{
+        font-size: 18px;
+    }
+
+    .left-back img {
+        margin-right: 1rem;
+    }
+    .bg-colo{
+        background-color: #fff;
+    }
+
+    .left-back {
+        height: 2.5rem;
+        width: 3rem;
+        float: left;
+        margin-top: 1.3rem;
+        margin-left: .3rem;
+    }
+    .left-back img{
+        height: 1.5rem;
+    }
+    .header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{
+        border-style: none;
+    }
+    .scroll-content::-webkit-scrollbar{
+        display: none;
+    }
+}

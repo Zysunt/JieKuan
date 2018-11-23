@@ -1,0 +1,141 @@
+page-register {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background,.fixed-content{
+        background: #564eF1;
+    }
+
+
+    .button-inner,.toolbar-title{
+        color: white;
+    }
+    .card-md{
+        margin: 0;
+    }
+    ion-card img{
+        width: initial;
+    }
+
+
+
+    .login{
+        width: 100%;
+        // height: 343px;
+        background: white;
+        border-radius: 30px;
+        margin-top: 40px;
+        position: relative;
+        left: 50%;
+        margin-left: -50%;
+    }
+    .inp{
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid #f2f2f2;
+        padding-top: 18px;
+    }
+    .inp span{
+        color:#afafaf;
+    }
+    .inp input{
+        border: none;
+        float: left;
+        margin-left: 10px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .inp img{
+        float: left;
+        margin-top: 5px;
+    }
+    .reg-fog{
+        font-size: 16px;
+        color: #dedede;
+        padding: 19px 3px 10px;
+        position: relative;
+    }
+    .check{
+        float: left;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background: #e3e2e9;
+    margin-top: 3px;
+    margin-right: 10px;
+    }
+    #confirm{
+        width: 15px;
+        height: 15px;
+        opacity: 0;
+    }
+    #confirm:checked+label{
+        display: block
+    }
+    .confirm{
+        width: 5px;
+    height: 10px;
+    position: absolute;
+    border: 2px solid #564eF1;
+    border-top: none;
+    border-left: none;
+    top: 2px;
+    left: 4px;
+        transform: rotate(45deg);
+        display: none;
+        
+    }
+    .reg-fog span:nth-of-type(2){
+        float: right;
+    }
+    .loginbtn {
+        width: 100% !important;
+        border-radius: 56px !important;
+        height: 56px !important;
+        background: #564eF1 !important;
+        font-size: 18px !important;
+        letter-spacing: 4px !important;
+        margin: 3rem 0 !important;
+    }
+
+    .codebtn{
+        width: 40% !important;
+        height: 100% !important;
+        float: right !important;
+        margin-top: 5px;
+    }
+    .codebtn button{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        // top: 50%;
+        margin-top: -6%;
+        background: none;
+// left: 50%;
+// margin-left: -45%;
+    }
+    .codebtn span{
+        color: #797979;
+        font-size: 14px;
+    }
+
+ input::-webkit-input-placeholder{
+            color:#afafaf;
+            font-size: 14px;
+        }
+        // input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+        //     color:#afafaf;
+        //     font-size: 14px;
+        // }
+        // input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+        //     color:#afafaf;
+        //     font-size: 14px;
+        // }
+        // input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+        //     color:#afafaf;
+        //     font-size: 14px;
+        // }
+        #newpsd::-webkit-input-placeholder{
+            font-size: 12px;
+        }
+}

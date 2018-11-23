@@ -1,0 +1,25 @@
+page-problem-detail {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+
+
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #999999;
+    }
+}

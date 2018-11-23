@@ -1,0 +1,73 @@
+<!--
+  Generated template for the BorrowRecordPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>借款记录</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="apptype">
+      <ion-segment-button value="isAll">
+        全部
+      </ion-segment-button>
+      <ion-segment-button value="isWait">
+        待审核
+      </ion-segment-button>
+      <ion-segment-button value="isPass">
+        已放款
+      </ion-segment-button>
+      <ion-segment-button value="isCom">
+        已完成
+      </ion-segment-button>
+      <ion-segment-button value="isCancle">
+        已取消
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+
+  <ul *ngFor="let item of getItems(apptype)">
+    <li>
+      <div>借款类型</div>
+      <div>{{item.type}}</div>
+    </li>
+    <li>
+      <div>申请时间</div>
+      <div>{{item.startdate}}</div>
+    </li>
+    <li>
+      <div>借款编号</div>
+      <div>{{item.code}}</div>
+    </li>
+    <li>
+      <div>金额</div>
+      <div>{{item.money}}</div>
+    </li>
+    <li>
+      <div>期限</div>
+      <div>{{item.deadline}}</div>
+    </li>
+    <li *ngIf="apptype!='isWait'">
+      <div>打款日</div>
+      <div>{{item.dakuan}}</div>
+    </li>
+    <li *ngIf="apptype!='isWait'">
+      <div>约定还款日</div>
+      <div>{{item.repay}}</div>
+    </li>
+    <li>
+      <div>借款状态</div>
+      <div>{{item.status}}</div>
+    </li>
+  </ul>
+
+</ion-content>

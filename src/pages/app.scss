@@ -1,0 +1,17 @@
+// http://ionicframework.com/docs/theming/
+.left-back {
+    height: 2.5rem;
+    width: 3rem;
+    float: left;
+    margin-top: 1.3rem;
+    margin-left: .3rem;
+}
+.left-back img{
+    height: 1.5rem;
+}
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{
+    border-style: none;
+}
+.scroll-content::-webkit-scrollbar{
+    display: none;
+}

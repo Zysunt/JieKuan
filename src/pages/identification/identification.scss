@@ -1,0 +1,94 @@
+page-identification {
+.identification_back{
+    text-align: left;
+    float: left;
+    line-height: 24px;
+    font-size: 28px;
+}
+.fixed-content{
+    background: #fcfcfc;
+}
+.title{
+    padding: 0 20px 0;
+}
+.item-md.item-block .item-inner,
+.item-ios.item-block .item-inner,
+.list-ios > .item-block:first-child,
+.list-ios > .item-block:last-child{
+    border: none
+}
+.list{
+   line-height: 60px;
+   background: white;
+   height: 60px;
+   margin-bottom: 10px;
+}
+.list .logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 7px;
+}
+
+.list .classify{
+    float: left;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.list .unidentificated{
+    float: right;
+    // color: #827df4;
+color: #b5b5b5;
+    font-size: 16px;
+}
+.list .identificated{
+    float: right;
+    font-size: 16px;
+    color: #564ef1;
+}
+.list .icon{
+    margin-left: 30px;
+}
+
+.tips{
+    color: #6861f2;
+    font-size: 18px;
+    text-align: initial;
+    padding:13px 0;
+}
+.tips span{
+    color: #b1b1b1;
+    font-size: 13px;
+}
+.arrow_right{
+    width: 6px !important;
+    height: 11px !important;
+     float: right !important;
+    margin-left: 37px;
+    margin-top: 23px !important;
+    margin-right: 10px;
+}
+.button-ios {
+    border-radius: 1.2rem;
+    height:4.6rem;
+    font-size: 18px;
+    color: #fff;
+    background-color: #564ef1;
+    margin: 3rem 6%;
+    width: 86%;
+}
+.button-md {
+    overflow: hidden;
+    width: 86%;
+    height:4.6rem;
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: #564ef1;
+    margin: 3rem 6%;
+    border-radius: 1rem;
+}
+// .list:nth-last-child(1) span:nth-of-type(2){
+//     color: #b5b5b5;
+// }
+}

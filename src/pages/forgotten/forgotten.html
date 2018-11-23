@@ -1,0 +1,38 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>忘记密码</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card class="login"> 
+    <ion-card-content>
+          <p class="intro">已向手机号<span>{{tel}}</span>发送短信验证码</p>
+
+          <div class="fog">
+            <div class="fog_top">
+              <input type="number" name="" pattern="[0-9]*" [(ngModel)]="msgcode" placeholder="请输入验证码">
+              <div class="codebtn">
+                <button color="custom" item-right ion-button (click)="settime()" [disabled]="!verifyCode.disable" value="获取验证码" style="box-shadow:none;">{{verifyCode.verifyCodeTips}}</button>
+              </div>
+            </div>
+
+            <div class="fog_bottom">
+              <input type="password" name="" pattern="[0-9]*" [(ngModel)]="newpsd" placeholder="设置新密码">
+              <img src="assets/imgs/login/eye@2x.png" alt="" width="20px;" height="12px;">
+            </div>
+          </div>
+     
+       <p class="tip">需最少8位数字+字母组成</p>
+
+      <button ion-button text-center class="loginbtn" (click)="submit()">
+        提交
+      </button>
+    </ion-card-content>
+  
+  </ion-card>
+</ion-content>

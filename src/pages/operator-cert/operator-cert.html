@@ -1,0 +1,28 @@
+
+<ion-header>
+
+    <ion-navbar >
+        
+      <ion-title text-center>运营商认证</ion-title>
+ 
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="clear-fu">
+      <span class="left-name">手机号码</span>
+      <input type="tel" class="input-btn"  pattern="[0-9]*" placeholder="1874552445" [(ngModel)]="tel" style="width:60%;">
+    </div>
+    <div class="clear-fu">
+      <span class="left-name">服务密码</span>
+      <input type="password" class="input-btn"  pattern="[0-9]*" [(ngModel)]="psd" placeholder="123456" style="width:60%;">
+    </div>
+    <div class="clear-fu">
+      <span class="left-name">验证码</span>
+      <input type="number" class="input-btn" placeholder="请输入" [(ngModel)]="idcode" style="padding-left:50px;">
+      <button class="code-btn" item-right ion-button (click)="settime()" [disabled]="!verifyCode.disable" value="获取验证码" style="box-shadow:none;">{{verifyCode.verifyCodeTips}}</button>
+    </div>
+    <button ion-button (click)="submitoperator()">确认</button>
+</ion-content>

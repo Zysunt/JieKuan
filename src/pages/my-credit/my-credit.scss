@@ -1,0 +1,73 @@
+page-my-credit {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+
+
+
+
+    .change{
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        margin-top: -10px;
+        font-size: 1.7rem;
+        color: #424242;
+    }
+    .bank_card{
+        width: 100%;
+        height: 132px;
+        background: #377ae8;
+        border-radius: 10px;
+        color: white;
+        position: relative;
+    }
+    .card_bank{
+        margin-left: 26px;
+        padding-top: 13px;
+    }
+    .card_bank span{
+        font-size: 21px;
+    }
+    .card_type{
+        font-size: 18px;
+        padding-left: 68px;
+    }
+    .card_code{
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    // .card_code img{
+    //     margin-right: 20px;
+    // }
+    .card_code span{
+        margin-left: 20px;
+    }
+
+    .addcard{
+        width: 300px;
+        height: 70px;
+        border-radius: 1rem;
+        border: 2px solid #E6E6E6;
+        font-size: 53px;
+        color: #E6E6E6;
+        text-align: center;
+        line-height: 70px;
+        position: relative;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: 30px;
+    }
+}

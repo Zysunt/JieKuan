@@ -1,0 +1,73 @@
+page-basic-cert {
+    .clear-fu{
+        overflow: hidden;
+    }
+    .clear{ clear:both} 
+   
+    .toolbar-content{
+        overflow: hidden;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 18px;
+        overflow: hidden;
+        margin:1rem 0;
+        background: white;
+    }
+    .scroll-content::-webkit-scrollbar{
+        display: none;
+    }
+    .left-msg{
+        margin-left: 1rem;
+        float: left;
+        width:73px;
+        color: #c6c6c6;
+    }
+    .right-msg{
+        margin-left: 20px;
+        border: none;
+        width:65%;
+    }
+    .button-ios {
+        border-radius: 1.2rem;
+        height:4.6rem;
+        font-size: 18px;
+        color: #fff;
+        background-color: #564ef1;
+        margin: 3rem 6%;
+        width: 86%;
+    }
+    .button-md {
+        overflow: hidden;
+        width: 86%;
+        height:4.6rem;
+        font-size: 1.8rem;
+        color: #fff;
+        background-color: #564ef1;
+        margin: 3rem 6%;
+        border-radius: 1rem;
+    }
+
+
+    .bar-button-default-ios{
+        color: unset;
+    }
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+}

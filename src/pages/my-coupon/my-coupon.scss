@@ -1,0 +1,177 @@
+page-my-coupon {
+    .toolbar-title-md{
+        margin-left: -24px;
+    }
+    .toolbar-background{
+        background: white;
+    }
+    .fixed-content{
+        background: #fcfcfc;
+    }
+    .bar-button-default-ios{
+        color: black;
+    }
+
+
+    .segment-button{
+        color: black !important;
+        border:none !important;
+    }
+    .segment-activated{
+        border-bottom: 3px solid #488aff !important;
+        background-color: unset !important;
+        color: #2878ee !important;
+    }
+    .segment-button{
+        font-size: 15px !important;
+    }
+
+
+
+    li{
+        background: white;
+        width: 100%;
+        height: 95px;
+        margin-top: 10px;
+    }
+    .pic{
+        width: 122px;
+        height: 68px;
+        position: relative;
+        float: left;
+        margin-top: 13px;
+    }
+    .pic img{
+        position: absolute;
+    }
+    .pic p{
+        text-align: center;
+        line-height: 68px;
+        font-size: 40px;
+        color: white;
+        position: relative;
+    }
+    .word{
+        float: right;
+    }
+    .datetime{
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+    .note{
+        width: 100%;
+    }
+    .word_top{
+        margin-top: -20px;
+        width: 100%;
+    height: 45px;
+    }
+    .coupon_ava{
+        font-size: 17px;
+        line-height: 45px;
+        color: black;
+        float: left;
+    }
+    .coupon_use{
+        color: #2877ee;
+    border: 1px solid #2877ee;
+    border-radius: 13px;
+    padding: 3px;
+    float: right;
+    margin-top: 9px;
+    }
+    .button-ios-danger,.button-md-danger{
+        background-color: #2877ee;
+    }
+    .item-md.item-block .item-inner{
+        padding-right: 10px;
+    }
+    .input-wrapper{
+        display: none;
+    }
+
+
+
+    /* TODO: spinner is dropping classes so we have to use ids: https://github.com/ionic-team/ionic/issues/7087 */
+  #archive-spinner,
+  #download-spinner,
+  .archiving .expand-hide,
+  .downloading .expand-hide {
+    display: none;
+  }
+  /* TODO: spinner doesn't have a good way to do this yet: https://github.com/ionic-team/ionic/issues/7087 */
+  #archive-spinner.spinner-ios line,
+  #archive-spinner.spinner-crescent circle {
+    stroke: #fff;
+  }
+  #archive-spinner.spinner-circles circle {
+    fill: #fff;
+  }
+  .archiving #archive-spinner,
+  .downloading #download-spinner {
+    display: block;
+  }
+  .chat-sliding-demo ion-note {
+    font-size: 13px;
+    margin-top: -8px;
+  }
+  .chat-sliding-demo img {
+    pointer-events: none;
+  }
+  .login-sliding-demo .ion-logo-twitter {
+    color: #53ACEB;
+  }
+  .login-sliding-demo .ion-logo-github {
+    color: #000000;
+  }
+  .login-sliding-demo .ion-logo-instagram {
+    color: #235D8D;
+  }
+ .used{
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    border-radius: 13px;
+    padding: 3px;
+    float: right;
+    margin-top: 9px;
+ }
+  .item-block{
+      padding: 0;
+  }
+  .item-inner,.list-ios > .item-wrapper:last-child .item-block{
+      border: none !important;
+  }
+
+  @media screen and ( max-width:320px){
+    .item-ios ion-avatar[item-start]{
+        margin: 8px 0 8px 0;
+    }
+    .datetime{
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+    .word_top{
+        margin-top: -20px;
+    }
+    .word_top span:nth-of-type(1){
+        font-size: 14px;
+        line-height: 41px;
+        color: black;
+    }
+    .word_top span:nth-of-type(2){
+        color: #2877ee;
+        padding: 0;
+    }
+
+  }
+  .item-md ion-avatar img,.item-ios ion-avatar img {
+    border-radius: initial;
+    width: initial !important;
+    height: initial !important;
+}
+.item-ios ion-avatar img{
+    border-radius: initial;
+    width: initial;
+    height: initial;
+}
+}

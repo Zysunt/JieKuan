@@ -1,0 +1,47 @@
+
+<ion-header>
+
+    <ion-navbar >
+        
+      <ion-title text-center>基础信息认证</ion-title>
+      <!-- <div class="clear"></div> -->
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ul>
+      <li>
+        <span class="left-msg">QQ号码  </span>
+        <input class="right-msg" placeholder="145455245632" [(ngModel)]="qqnum"/>
+      </li>
+      <li>
+        <span class="left-msg">常住地址</span>
+        <input class="right-msg" placeholder="ddsajdbajsidnha" [(ngModel)]="living"/>
+        
+      </li>
+      <li>
+        <span class="left-msg">单位名称</span>
+        <input class="right-msg" placeholder="某某某单位" [(ngModel)]="factory"/>
+
+      </li>
+      <li>
+        <span class="left-msg">单位电话</span>
+        <input class="right-msg" placeholder="0514-55144422" [(ngModel)]="fac_tel"/>
+
+      </li>
+      <li>
+        <span class="left-msg">单位地址</span>
+        <input class="right-msg" placeholder="dnjsbdjhsbfd" [(ngModel)]="fac_location"/>
+
+      </li>
+      <li>
+        <span class="left-msg">专业擅长</span>
+        <input class="right-msg" placeholder="sadas3" [(ngModel)]="skill"/>
+
+      </li>
+               
+    </ul>
+    <button ion-button (click)="submitbasic()">确定</button>
+</ion-content>

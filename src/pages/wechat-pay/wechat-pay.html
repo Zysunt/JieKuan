@@ -1,0 +1,47 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <!-- <ion-icon (click)="pop()" ios="ios-arrow-back" md="md-arrow-back"></ion-icon> -->
+       <!-- <div (click)="pop()" class="left-back" >
+        <img  src="assets/imgs/left@2x.png" alt="">
+       </div> -->
+      <ion-title text-center>微信支付</ion-title>
+      <!-- <div class="clear"></div> -->
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="itemBox">
+        <span class="gray-colo">暂不支持信用卡还款服务</span>
+      </div>
+      <div class="itemBox">
+        <span class="left-fon">还款金额</span>
+        <span class="right-fon blue-colo">{{monney}}元</span>
+      </div>
+      <div class="itemBox">
+          <span class="left-fon">支付方式</span>
+          <span class="gray-coloz">微信支付</span>
+          <img class="right-img" src="assets/imgs/right_gray@2x.png" alt="">
+        </div>
+        <div class="codeBox">
+            <img class="codeImg" (press)="saveImage()" [src]='imgsrc' alt="">
+            <span class="gray-colo">长按保存二维码</span>
+        </div>
+      <div class="cont-box">
+        <p class="yellowColo">1.请将应还金额打入到指定的官方账户中，转账时请务必按照备注格式添加备注</p>
+        <p class="yellowColo">2.转账完成后，请返回APP进行下一步操作</p>
+        <p class="gray-colo">官方账户：12454465465454</p>
+        <p class="gray-colo">转账金额：124544454</p>
+        <p class="gray-colo">转账格式备注：12454465465454</p>
+      </div>
+        
+
+
+      <div class="confirm" text-center>
+          <button ion-button>确定</button>
+          <button ion-button class="cancle">取消</button>
+      </div>
+</ion-content>

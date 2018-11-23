@@ -1,0 +1,77 @@
+<!--
+  Generated template for the ToBorrowPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>我要借款</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="choose_box">
+   <div class="c_b_content" style="float:left;">
+        <p>请选择借款金额</p>
+      <ion-item>
+        <ion-select [(ngModel)]="money" cancelText="取消" okText="确认">
+          <ion-option value="1000">1000</ion-option>
+          <ion-option value="5000">5000</ion-option>
+          <ion-option value="2000">2000</ion-option>
+          <ion-option value="10000">100000</ion-option>
+        </ion-select>
+      </ion-item>
+   </div>
+   <div class="c_b_content" style="float:right;">
+      <p>请选择借款期限 (天)</p>
+    <ion-item>
+      <ion-select [(ngModel)]="days" cancelText="取消" okText="确认">
+        <ion-option value="30">30</ion-option>
+        <ion-option value="60">60</ion-option>
+        <ion-option value="90">90</ion-option>
+        <ion-option value="100">100</ion-option>
+      </ion-select>
+    </ion-item>
+ </div>
+</div>
+
+<div class="accounts" style="color:#b0b0b0;">
+  <p class="choose_coupon" (click)="myCoupon()" text-center>
+    <img src="assets/imgs/home/coupon_2@2x.png" alt="" width="21px" height="13px">
+    <span>请选择优惠券</span>
+    <img src="assets/imgs/components/right_gray@2x.png" alt="" width="6px" height="11px;">
+  </p>
+  <p>
+    <span >
+      快速申请费:{{express}}元
+    </span>
+    <span class="xifei">
+      息费:{{accrual}}元
+    </span>
+  </p>
+  <p>
+      <span >
+        用户管理费:{{manage}}元
+      </span>
+      <span class="youhuiquan">
+       优惠券:{{discount}}元
+      </span>
+    </p>
+
+    <h3>
+      到期应还: &nbsp;<span> {{money}}元</span>
+    </h3>
+
+    <p class="confirm">
+        <ion-toggle  checked="false"></ion-toggle>
+        我已阅读并同意<span>
+          《用户借款协议》
+        </span>
+    </p>
+    <button ion-button block class="torepay" (click)="borrow()">提交</button>
+</div>
+</ion-content>

@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    // text-align: center;
+}
+
+.scroll-content::-webkit-scrollbar{
+    display: none;
+}
+.header-ios .toolbar-ios:last-child .toolbar-background-ios{
+    border-width: 0;
+}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+
+    width: 100%;
+    height: 0; 
+     //background-image: none;
+   
+}
+.toolbar-background-md {
+    border-color: none;
+    background: none;
+}
+.ion-tab-icon-base {
+    width: 22px !important;
+    height: 22px !important;
+    // padding: 4px 4px 2px;
+    }
+    .ion-tab-icon-md-base {
+    min-width: 0 !important;
+    height: 22px;
+    }
+    $tabImageName: 'home' 'identification' 'find' 'mine';
+    // @for $i from 1 to 5 {
+    //for ios
+    .ion-ios-tab-#{nth($tabImageName, 1)} {
+    @extend .ion-tab-icon-base;
+    content: url("../assets/imgs/tabs/homepage_blue@2x.png");
+    }
+    .ion-ios-tab-#{nth($tabImageName, 1)}-outline {
+    @extend .ion-tab-icon-base;
+    content: url("../assets/imgs/tabs/homepage_gray@2x.png");
+    }
+    .ion-ios-tab-#{nth($tabImageName, 2)} {
+        @extend .ion-tab-icon-base;
+        content: url("../assets/imgs/tabs/attest_blue@2x.png");
+        }
+        .ion-ios-tab-#{nth($tabImageName, 2)}-outline {
+        @extend .ion-tab-icon-base;
+        content: url("../assets/imgs/tabs/attest_gray@2x.png");
+        }
+        .ion-ios-tab-#{nth($tabImageName, 3)} {
+            @extend .ion-tab-icon-base;
+            content: url("../assets/imgs/tabs/find_blue@2x.png");
+            }
+            .ion-ios-tab-#{nth($tabImageName, 3)}-outline {
+            @extend .ion-tab-icon-base;
+            content: url("../assets/imgs/tabs/find_gray@2x.png");
+            }
+            .ion-ios-tab-#{nth($tabImageName, 4)} {
+                @extend .ion-tab-icon-base;
+                content: url("../assets/imgs/tabs/my_blue@2x.png");
+                }
+                .ion-ios-tab-#{nth($tabImageName, 4)}-outline {
+                @extend .ion-tab-icon-base;
+                content: url("../assets/imgs/tabs/my_gray@2x.png");
+                }
+    // for android
+    .tabs-md .tab-button[aria-selected=true] {
+    .ion-md-tab-#{nth($tabImageName, 1)} {
+    @extend .ion-tab-icon-md-base;
+    content: url("../assets/imgs/tabs/homepage_blue@2x.png");
+    }
+    }
+    .tabs-md .tab-button[aria-selected=false] {
+    .ion-md-tab-#{nth($tabImageName, 1)} {
+    @extend .ion-tab-icon-md-base;
+    content: url("../assets/imgs/tabs/homepage_gray@2x.png");
+    }
+    }
+    .tabs-md .tab-button[aria-selected=true] {
+        .ion-md-tab-#{nth($tabImageName, 2)} {
+        @extend .ion-tab-icon-md-base;
+        content: url("../assets/imgs/tabs/attest_blue@2x.png");
+        }
+        }
+        .tabs-md .tab-button[aria-selected=false] {
+        .ion-md-tab-#{nth($tabImageName, 2)} {
+        @extend .ion-tab-icon-md-base;
+        content: url("../assets/imgs/tabs/attest_gray@2x.png");
+        }
+        }
+        .tabs-md .tab-button[aria-selected=true] {
+            .ion-md-tab-#{nth($tabImageName, 3)} {
+            @extend .ion-tab-icon-md-base;
+            content: url("../assets/imgs/tabs/find_blue@2x.png");
+            }
+            }
+            .tabs-md .tab-button[aria-selected=false] {
+            .ion-md-tab-#{nth($tabImageName, 3)} {
+            @extend .ion-tab-icon-md-base;
+            content: url("../assets/imgs/tabs/find_gray@2x.png");
+            }
+            }
+            .tabs-md .tab-button[aria-selected=true] {
+                .ion-md-tab-#{nth($tabImageName, 4)} {
+                @extend .ion-tab-icon-md-base;
+                content: url("../assets/imgs/tabs/my_blue@2x.png");
+                }
+                }
+                .tabs-md .tab-button[aria-selected=false] {
+                .ion-md-tab-#{nth($tabImageName, 4)} {
+                @extend .ion-tab-icon-md-base;
+                content: url("../assets/imgs/tabs/my_gray@2x.png");
+                }
+                }
+    // }
+    .ion-ios-tab-task,.ion-ios-tab-task-outline,.ion-ios-tab-master,.ion-ios-tab-master-outline{
+    width: 22px !important;
+    height: 22px !important;
+    }
+
+    .tabs-ios .tab-button-icon{
+        min-width: 22px;
+    }
+    .tabs-md .tab-button[aria-selected=true] {
+        color: #564eF1;
+        padding: 0;
+    }
+
+
+    .tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+        color: #564ef1;
+    }
+    .toolbar-title-ios{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .button-md:hover:not(.disable-hover) {
+        background-color: #564ef1;
+    }
+    .button-md{
+        height: 46rem;
+    }
